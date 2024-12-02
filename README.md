@@ -207,9 +207,9 @@ chmod +x *.py
 python3 onnxHalf_to_trtHalf_orin_nano.py #onnxHalf_to_trtHalf_nano.py if jetson nano
 ```
 
-### Step 3.10 - Run TRT engines on jetson orin nano/jetson nano:
-#### Step 3.10a - Setup LAN setup as shown in paper
-#### Step 3.10b - On Desktop where 192.168.8.107:11311 will be different for your machine (run ifconfig):
+### Step 3.9 - Run TRT engines on jetson orin nano/jetson nano:
+#### Step 3.9a - Setup LAN setup as shown in paper
+#### Step 3.9b - On Desktop where 192.168.8.107:11311 will be different for your machine (run ifconfig):
 ```
 edit .bashrc file at ~ 
 export ROS_MASTER_URI=http://192.168.8.107:11311
@@ -218,7 +218,7 @@ sudo reboot
 source ~/.bashrc
 roslaunch ifo_gazebo drone_and_world.launch
 ```
-#### Step 3.10c - On jetson orin nano/jetson nano where 192.168.8.134 will be different for you jetson device (run ifconfig):
+#### Step 3.9c - On jetson orin nano/jetson nano where 192.168.8.134 will be different for you jetson device (run ifconfig):
 ```
 edit .bashrc file at ~ 
 export ROS_MASTER_URI=http://192.168.8.107:11311
