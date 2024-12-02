@@ -1,7 +1,7 @@
 # Efficient-UAV-DRL-OA-Gym-Gazebo
 ## Overview 
 #### The code in this repository is connected to the yet to be published paper 'FERO: Efficient Deep Reinforcement Learning based UAV Obstacle Avoidance at the Edge'.
-#### The bellow steps provide instructions to 1) setup ROS/Gym/Gazebo environment on a Ubuntu 20.04 machine (e.g., desktop), 2) run python/pytorch files to train D3QN/SAC baseline/TL models and python files to convert pytorch to half_precision onnx, 3) setup the nvidia jetson orin nano or nvidia jetson nano to run the models (as TensorRT engines)
+#### The bellow steps provide instructions to 1) setup ROS/Gym/Gazebo environment on a Ubuntu 20.04 machine (e.g., desktop), 2) run python/pytorch files to train D3QN/SAC baseline/TL models and python files to convert pytorch to half precision onnx, 3) setup the nvidia jetson orin nano or nvidia jetson nano to run the models (as TensorRT engines)
 ## 1: Setup ROS/Gym/Gazebo environment on a Ubuntu 20.04 machine (e.g., desktop)
 ### Step 1.1 - Ensure you have a Ubuntu 20.04 Machine and install ROS Noetic (http://wiki.ros.org/noetic/Installation/Ubuntu)
 ### Step 1.2 - Run various updates/installs and create a catkin workspace:
@@ -113,7 +113,7 @@ mkdir {models,plots,worlds}
 ```
 ##### Step 1.cii - Download the '.world' files in the 'desktop_files' folder and move them to newly created 'worlds' folder
 
-## 2: Run python/pytorch files to train models or convert pytorch to half_precision onnx
+## 2: Run python/pytorch files to train models or convert pytorch to half precision onnx
 ### Step 2.1 - Launch world (you may have to restart machine before this step)
 ```
 cd ~
