@@ -96,7 +96,7 @@ pip3 install torch
 ```
 ### Step 1.6 - Move the files from this github repository into the appropriate places as outlined bellow
 #### Step 1.6a - Add python scripts to '~/catkin_ws/src/mavros-px4-vehicle/scripts'
-##### Step 1.6ai - Download python scripts in 'desktop_files' folder and drag and drop files into '~/catkin_ws/src/mavros-px4-vehicle/scripts' folder
+##### Step 1.6ai - Download python scripts in 'desktop_files' folder of this github repo and drag and drop files into '~/catkin_ws/src/mavros-px4-vehicle/scripts' folder of your machine
 ##### Step 1.6aii - Ensure the python scripts are executable
 ```
 cd ~/catkin_ws/src/mavros-px4-vehicle/scripts
@@ -106,15 +106,15 @@ chmod +x *.py
 ##### Step 1.6bi - Download the '.launch' files in 'desktop_files' folder
 ##### Step 1.6bii - Replace the files with the same names in '~/catkin_ws/src/ifo_gazebo/ifo_gazebo/launch/' with these new files
 #### Step 1.6c - Create a few folders and add world files to one of them
-##### Step 1.ci -  Create folders at '~/catkin_ws/src/mavros-px4-vehicle'
+##### Step 1.6ci -  Create folders at '~/catkin_ws/src/mavros-px4-vehicle'
 ```
 cd ~/catkin_ws/src/mavros-px4-vehicle
 mkdir {models,plots,worlds}
 ```
-##### Step 1.cii - Download the '.world' files in the 'desktop_files' folder and move them to newly created 'worlds' folder
+##### Step 1.6cii - Download the '.world' files in 'desktop_files' folder of this github repo and move them to newly created 'worlds' folder
 
 ## 2: Run python/pytorch files to train models or convert pytorch to half precision onnx
-### Step 2.1 - Launch world (you may have to restart machine before this step)
+### Step 2.1 - Launch world if training (you may have to restart machine before this step)
 ```
 cd ~
 source ~/.bashrc
@@ -194,15 +194,15 @@ pip3 install numpy=1.21
 ```
 ### Step 3.7 - Move the files from this github repository into the appropriate places as outlined bellow
 #### Step 3.7a - Add python scripts to '~/catkin_ws/src/mavros-px4-vehicle/scripts'
-##### Step 3.7ai - Download python scripts in 'jetson_files' folder and drag and drop files into '~/catkin_ws/src/mavros-px4-vehicle/scripts' folder
+##### Step 3.7ai - Download python scripts in 'jetson_files' folder of this github repo and drag and drop files into your '~/catkin_ws/src/mavros-px4-vehicle/scripts' folder
 ##### Step 3.7aii - Ensure the python scripts are executable
 ```
 cd ~/catkin_ws/src/mavros-px4-vehicle/scripts
 chmod +x *.py
 ```
 
-### Step 3.8 - onnx file to TensorRT engine:
-#### Step 3.8a - change to the scripts folder directory and run the bellow command
+### Step 3.8 - Onnx file to TensorRT engine:
+#### Step 3.8a - Change to the scripts folder directory and run the bellow command
 ```
 python3 onnxHalf_to_trtHalf_orin_nano.py #onnxHalf_to_trtHalf_nano.py if jetson nano
 ```
