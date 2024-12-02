@@ -187,7 +187,7 @@ source devel/setup.bash
 ### Step 3.6 - Install scipy, gym, torch and re-install numpy so it v1.21:
 ```
 pip3 install scipy
-pip3 install gym
+pip3 install gym==0.21
 pip3 install torch
 pip3 uninstall numpy
 pip3 install numpy=1.21
